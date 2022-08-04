@@ -18,3 +18,23 @@ if __name__ == '__main__':
         text = input('Enter Text : ')
         convert_text_to_speech(text)
 ```
+
+# Javascript
+
+```
+    <input type="text">
+    <button type="submit">Click Me</button>
+
+.
+.
+.
+    <script>
+        var button = document.querySelector("button");
+        button.addEventListener("click",function (){
+            var value = document.querySelector("input").value;
+            speechSynthesis.speak(
+              new SpeechSynthesisUtterance(value)
+            );
+        });
+    </script>
+```
